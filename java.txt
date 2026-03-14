@@ -1,0 +1,32 @@
+const express = require("express")
+const fs = require("fs")
+
+const app = express()
+
+app.use(express.json())
+
+let usuarios = JSON.parse(
+fs.readFileSync("./database/usuarios.json")
+)
+
+app.post("/login",(req,res)=>{
+
+const {email,senha} = req.body
+
+const user = usuarios.find(u=>
+u.email===email && u.senha===senha
+)
+
+if(user){
+
+res.json({status:"ok"})
+
+}else{
+
+res.json({status:"erro"})
+
+}
+
+})
+
+app.listen(3000)

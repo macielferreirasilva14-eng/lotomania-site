@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Lotomania AI Pro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Lotomania AI Pro</h1>
+<p>Plataforma profissional de análise e estratégias</p>
+
+<a href="planos.html">
+<button>ASSINAR AGORA</button>
+</a>
+
+</header>
+
+<section>
+
+<h2>Ferramentas da Plataforma</h2>
+
+<ul>
+<li>📊 análise histórica completa</li>
+<li>🔥 números quentes e frios</li>
+<li>🎯 gerador automático de apostas</li>
+<li>🧠 IA de otimização de jogos</li>
+<li>📉 simulador de estratégias</li>
+</ul>
+
+</section>
+
+</body>
+</html>

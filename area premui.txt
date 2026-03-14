@@ -1,0 +1,23 @@
+const stripe = require("stripe")("SUA_CHAVE")
+
+app.post("/criar-assinatura", async(req,res)=>{
+
+const session = await stripe.checkout.sessions.create({
+
+payment_method_types:["card"],
+
+mode:"subscription",
+
+line_items:[{
+price:"price_123",
+quantity:1
+}],
+
+success_url:"https://site.com/sucesso",
+cancel_url:"https://site.com/cancelado"
+
+})
+
+res.json({url:session.url})
+
+})
